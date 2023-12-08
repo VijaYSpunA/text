@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World touR</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="Nav-container" id="Nav-container">
+
+        <nav class="Nav" id="Nav">
+            <h1 style="margin-top: 20px;"><a href=""><b style="font-size: 40px;color: orange;">W</b>orLd TouR</a></h1>
+                <ul class="list">
+                    <li id="login">Login</li>
+                    <li><a href="#sectiontwo">Offer tours</a></li>
+                    <li id="contact">Booking</li>
+                    <li>Contact</li>
+                    
+                 </ul>
+                 <h5 id="xmark" style="font-size: 28px;color: white;"><i class="fa-solid fa-xmark"></i></i></h5> 
+                
+                </nav>
+                <div id="bar" style="font-size: 28px;"><i class="fa-solid fa-bars"></i></div>
+                <div class="login" id="login-result">
+                    <i class="fa-solid fa-circle-xmark"  id="icon-two"></i>
+                        <div  class="form-container">
+                            <form action="">
+                                <h2>Login</h2>
+                                <label for="text2">Name or Email</label><br>
+                                <input type="text" name="name" placeholder="Enter your name" class="input" id="text2"><br>
+                                <label for="password">Password</label><br>
+                                <input type="password" name="name" placeholder="Enter your Password"  class="input" id="password"><br>
+                                <button class="btn ">Login</button>
+                                <div id="sig">
+                                <label for="text3">Name or Email</label><br>
+                                <input type="text" name="name" placeholder="Enter your name" class="input" id="text3"><br>
+                                <label for="password1">Password</label><br>
+                                <input type="password" name="name" placeholder="Enter your Password"  class="input" id="password1"><br>
+                                <label for="password2">Confirm Password</label><br>
+                                <input type="password" name="name" placeholder="Enter your Password"  class="input" id="password2"><br>
+                                <button class="btn ">Sign Up</button>
+                               </div>
+                            </form>
+                        </div>
+                    </div>
+                <!--<i class="fa-solid fa-circle-xmark icon" id="icon"></i>
+                    <i class="fa-solid fa-bars " id="bar"></i>
+                -->
+                <div class="Datename">  
+                    <div><Label for="starttoenddate">Where Will you GoinG</Label></div>
+                    <div><Label for="starttoenddate">StartToEndDate</Label></div>
+                    <div><Label for="starttoenddate">HowmAnyofYou</Label></div>
+                </div>
+              
+    <div  class="Ticket-booking"> 
+        <div class="Datafill"><input type="text" name="p" id="Where" placeholder="Where are you going"  class="data"></div>
+        <div class="Datafill"><input type="date" id="starttoenddate"name="datefill" class=" datedata" ><input type="date" name="datefill1" class=" datedata1"></div>
+        <div class="Datafill"><input type="number" id="Members" name="datefill2"  class="data" placeholder="Members"></div>
+    </div>
+
+    <h2 class="room-text" style="text-align: center;color: white;position: relative;top: 50px;">Room Booking</h2>
+    <div class="room-booking">
+        <div class="room">
+            <select id="roo" class="rooom">
+            <option value="room">Rooms Booking</option>
+            <option value="room">2 bed room</option>
+            <option value="room">4 bed room</option>
+            <option value="villa">villa</option>
+          </select></div>
+          <div class="days">
+            <div class="Datafill "><input type="date" name="datefill"id="Starttoenddate" class=" datedata" ><input type="date" name="datefill1" class=" datedata1"></div>
+          </div>
+        <div class="room">
+           
+            <select id="roo" id="room-members"class="rooom1">
+                <option value="room">How Many Persons</option>
+                <option value="room">2</option>
+                <option value="room">4 bed room</option>
+                <option value="villa">Adults</option>
+              </select>
+        </div>
+        </div>
+        <!--Office Opening and closing time-->
+       
+        <div id='oopens'>
+            
+        </div>
+    
+
+    <div class="contact" id="contact-result">
+        <div id="booking-container">
+            <form action="" >
+                <h2>Booking</h2>
+                <label for="name">Name <br>
+                <input type="text" name="name" placeholder="Enter your name" class="input" id="name">
+                </label><br>
+                <label for="tel">Mobile Number <br>
+                <input type="tel" name="tel" placeholder="Enter your mobile number" class="input" id="tel">
+                </label><br>
+                <label for="text">From Location<br>
+                <input type="text" name="fromlocation" placeholder="Enter the location" class="input" id="text"></label><br>
+                <label for="text1">To Location<br>
+                <input type="text" name="tolocation" placeholder="Enter the location" class="input" id="text1"></label><br>
+                <label for="textt">Persons<br>
+                <input type="number" name="tolocation" placeholder="Enter how manypersons" class="input" id="textt"></label><br>
+                <label for="date">Start Date<br>
+                <input type="date" name="startdate" class="input" id="date"></label><br>
+                <label for="date">End Date<br>
+                <input type="date" name="enddate" class="input" id="date"></label><br>
+                <label for="textare">Details<br>
+                <input type="textarea" name="details" class="input " row="3" col="4" placeholder="Enter your details" id="textare"></label>
+                <input type="submit" name="submit" class="submitbuttone" value="submit">
+            </form>
+        </div>
+                <i class="fa-solid fa-circle-xmark"  id="icon"></i>
+    </div>
+       
+           
+    </section>
+    <section class="sectiontwo" id="sectiontwo">
+        <div class="content">
+            <h1>Trending destinations</h1>
+            <div class="parent">
+                <a href="want to go.html"><div class="child one" style="color: white; "><b style="color: black;">Maldives</b> => you want to go click here</b></div>
+            </a></div>
+            <div class="parent">
+                <div class="child two" class="child one" style="color: white; "><b style="color: black;">Dubai</b> => you want to go click here</b></div>
+            </div>
+            
+            <div class="parent">
+                <div class="child three" class="child one" style="color: white; "><b style="color: black;">Paris</b> => you want to go click here</b></div>
+            </div>
+            
+            <div class="parent">
+                <div class="child for" class="child one" style="color: white; "><b style="color: black;">Italy</b> => you want to go click here</b></div>
+            </div>
+           
+            <div class="parent">
+                <div class="child five" class="child one" style="color: white; "><b style="color: black;">Switzerland</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child six" class="child one" style="color: white; "><b style="color: black;">Spain</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child seven" class="child one" style="color: white; "><b>Los Angels</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child eight" class="child one" style="color: white; "><b style="color: black;">Thai</b> => you want to go click here</b></div>
+            </div>
+            <h2> Trending destinations</h2>
+            <div class="parent">
+                <div class="child National1" class="child one" style="color: white; "><b style="color: black;">Chennai</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child National2" class="child one" style="color: white; "><b style="color: black;">Hyderabad</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child National3" class="child one" style="color: white; "><b style="color: black;">Mumbai</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child National4" class="child one" style="color: white; "><b style="color: black;">Kerala</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child National5" class="child one" style="color: white; "><b style="color: black;">Bangalore</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child National6" class="child one" style="color: white; "><b style="color: black;">Kashmir</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child National7" class="child one" style="color: white; "><b style="color: black;">Megalaya</b> => you want to go click here</b></div>
+            </div>
+            <div class="parent">
+                <div class="child National8" class="child one" style="color: white; "><b style="color: black;">Nepal</b> => you want to go click here</b></div>
+            </div>
+        </div>
+    </section>
+<section id="villasdetails">
+        <h2 style="   font-family: 'Abril Fatface', cursive;">We have Best villas and hotals</h2>
+    <div class="villas">
+        <div class="item">
+         <img src="asets/Parisvillas.webp" alt="">
+        </div>
+        <div class="item">
+           <img src="asets/spainhotals.jpg" alt="">
+        </div>
+        <div class="item">
+         <img src="asets/forest6.jpg" alt="">
+        </div>
+        <div class="item">
+         <img src="asets/switzvillas.jpeg" alt="">
+        </div>
+        <div class="item">
+        <img src="asets/forest1.jpg" alt="">
+        </div>
+        <div class="item">
+           <img src="asets/forest2.jpg" alt="">
+        </div>
+        <div class="item">
+         <img src="asets/forest4.jpg" alt="">
+        </div>
+        <div class="item">
+           <img src="asets/Forest3.jpg" alt="">
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-columns">
+        <div class="footer-logo">
+            <h1><b style="font-size: 60px;color: orange;">W</b>orLd TouR</h1>
+        </div>
+        <div>
+            <h2>Contact Information</h2>
+            <ul>
+               <li><a href="">About us</a></li>
+               <li><a href="">Contacts</a></li>
+               <li></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Countries</h2>
+            <ul>
+                <li><a href="">Lists</a></li>
+                <li><a href="">Holidays Best places</a></li>
+                <li><a href="">Offer places for trips</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>offers</h2>
+            <ul>
+                <li>20%</li>
+                <li>10% for 2 members</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    <div class="arrow" id="arrow"><a href="#Nav-container"><i class="fa-solid fa-arrow-up"></i></a></div>
+    <div class="contact-us">Contact-Us</div>
+      
+    
+<script src="java.js"></script>
+    
+</body>

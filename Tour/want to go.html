@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+     <section class="Maldivesn">
+        <div class="bg-color">
+        <h1><a href=""><b style="font-size: 40px;color: orange;">W</b>orLd TouR</a></h1>
+        <h2 style="text-align: center;color: white;">Emerald Maldives Resort & Spa.</h2>
+        <div id="Maldives-Hotel-Name">
+        <div class="details"><a href="WorldTour.html" class="ion">Home</a>
+        </div> 
+         
+         <div class="flex-container">
+         <button  class="btn" id="one"><h2>One bed</h2></button>
+         <button  class="btn" id="two"><h2>Two bed</h2></button>
+         <button  class="btn" id="villa"><h2>Villas</h2></button>
+         </div>
+           <div id="prize" style="text-align: center;"></div>
+           <div>
+            <ul class="food">
+                <li style="color: orange; font-size:2.5rem;">Food items</li>
+                <li>Fried Yams</li>
+                <li>Masroshi</li>
+                <li>Fish curry</li>
+                <li>Reef Fish Cutlets</li>
+                <li>Bis Keemiya</li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    </section>
+     
+     <script >
+         const onebed=document.getElementById("one");
+         const twobed=document.getElementById("two");
+         const villa=document.getElementById("villa");
+         const prize=document.getElementById("prize");
+
+ function re(){
+   if(onebed){
+      prize.innerHTML="11000 Rupees";
+   }
+   
+}
+
+onebed.addEventListener("click",re);
+twobed.addEventListener("click",()=>{
+    if(twobed){
+        prize.innerHTML="18000 Rupees";
+}
+})
+villa.addEventListener("click",()=>{
+    if(villa){
+        prize.innerHTML="23000 Rupees";
+}
+})
+     </script>
+</body>
+</html>
