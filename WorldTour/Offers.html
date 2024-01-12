@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers</title>
+    <link rel="stylesheet" href="Style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="Nav" id="Nav">
+        <h1><a href=""><b style="font-size:2rem;color: orange;">W</b>orLd TouR</a></h1>
+        
+            <div>
+                <div class="flexte" id="ul">
+                <h6 class='menu' ><a href="Worldour.html" >Home</a></h6>
+
+                <h6  class='menu' id="login" >Login</h6>
+                <h6  class='menu'><a href="Offers.html">Offer</a></h6>
+                <h6  class='menu' id="contact"><a href="Book.html">Booking</a></h6>
+                <h6  class='menu'><a href="#footer">Contact </a></h6>
+                </div>
+            </div>
+             <h5 id="xmark" style="font-size: 28px;color: white;"><i class="fa-solid fa-xmark"></i></i></h5> 
+    </nav>
+    <div id="bar" style="font-size: 28px;color: black;"><i class="fa-solid fa-bars"></i></div>
+   
+
+    <div class="login" id="login-result">
+        <i class="fa-solid fa-circle-xmark"  id="icon-two" style="color: rgb(236, 68, 68);"></i>
+            <div  class="form-container">
+                <form action="">
+                    <h2>Login</h2>
+                    <label for="text2">Name or Email</label><br>
+                    <input type="text" name="name" placeholder="Enter your name" class="input" id="text2"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="name" placeholder="Enter your Password"  class="input" id="password"><br>
+                    <button class="btn-form">Login</button>
+                    <div id="sig">
+                    <label for="text3">Name or Email</label><br>
+                    <input type="text" name="name" placeholder="Enter your name" class="input" id="text3"><br>
+                    <label for="password1">Password</label><br>
+                    <input type="password" name="name" placeholder="Enter your Password"  class="input" id="password1"><br>
+                    <label for="password2">Confirm Password</label><br>
+                    <input type="password" name="name" placeholder="Enter your Password"  class="input" id="password2"><br>
+                    <button class="btn-form">Sign Up</button>
+                   </div>
+                </form>
+            </div>
+        </div>
+<div class="home-container" id="home-container">
+    <h1 class="offers">Offers</h1>
+
+<h3 style="text-align: center;margin-bottom: 30px;">Still Going offers Just <span style="color: aqua;">Touch</span> on this image </h3>
+<!-- <a href="WorldTour.html" class="home">Home</a> -->
+</div>
+
+<section class="kat">
+    
+</section>
+
+
+<section class="footer" id="footer" style="margin-top: 40px;">
+
+    <div class="box-container">
+           
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="Worldour.html">home</a>
+            <a href="#home-container">Offer</a>
+            <a href="#">Login</a>
+            <a href="Book.html">Booking</a>
+            <a href="#footer">Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Social links</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+        </div>
+        <div class="box">
+            <h3>Branches</h3>
+           <ul>
+            <li>Chennai</li>
+            <li>Bangalore</li>
+            <li>Hyderabad</li>
+            <li>Kerala</li>
+            <li>Mumbai</li>
+            <h2 style="color: white;font-size: 1.5rem;">worldtour|vijayspuna@gmail.com</h2>
+            
+
+           </ul>
+        </div>
+
+    </div>
+
+</section> 
+
+
+<script>
+   const contact=document.getElementById("contact");
+const result=document.getElementById("contact-result");
+ const opentag=document.getElementById("bar");
+ const closetag=document.getElementById("xmark");
+ const nav=document.getElementById("Nav");
+        /*mobile resposive*/
+      function sh(){
+         if(opentag){
+            nav.classList.add("showup");
+
+         }
+      }
+      opentag.addEventListener("click",sh);
+
+      function van(){
+         if(closetag){
+            nav.classList.remove("showup");
+
+         }
+      }
+      closetag.addEventListener("click",van);
+
+
+      const total=document.querySelectorAll(".flexte h6");
+      function linkaction(){
+         const nav=document.getElementById("Nav");
+         nav.classList.remove("showup");
+      }
+      total.forEach((n)=>n.addEventListener("click",linkaction))
+
+     const login=document.getElementById("login");
+     const loginresult=document.getElementById("login-result");
+      const closetwotag=document.getElementById("icon-two");
+
+function loginopen(){
+   if(login){
+      loginresult.classList.add("show-two");
+
+   }
+}
+login.addEventListener("click",loginopen);
+
+function loginclose(){
+   if(closetwotag){
+      loginresult.classList.remove("show-two");
+
+   }
+}
+closetwotag.addEventListener("click",loginclose);
+
+const button=document.querySelectorAll(".btn");
+console.log(button)
+ function buttonn(){
+   if(button){
+      const loginresult=document.getElementById("login-result");
+      
+      loginresult.classList.remove("show-two");
+   }
+ }
+ button.forEach(n=>n.addEventListener("click",buttonn));
+
+
+   
+
+    let counteries=[
+        {
+            no:1,name:'Paris',offers:30,img:'asets/paris.webp'
+        },
+        {
+            no:2,name:'Maldives',offers:22,img:'asets/Mal.webp'
+        },
+        {
+            no:3,name:'los',offers:24,img:'asets/los.webp'
+        },
+        {
+            no:4,name:'switzerland',offers:31,img:'asets/Switzerland.webp'
+        },
+        {
+            no:5,name:'Dubai',offers:18,img:'asets/Dubai.jpg'
+        },
+        {
+            no:6,name:'Thailand',offers:6,img:'asets/thailand.jpg'
+        },
+        {
+            no:6,name:'Meghalaya',offers:6,img:'asets/Meghalaya.jpg'
+        },
+        {
+            no:6,name:'Kerala',offers:6,img:'asets/Kerala.jpg'
+        },
+
+    ]
+
+    let output=""
+    for(let i=0;i<counteries.length;i++){
+        output+=`  <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src=${counteries[i].img} alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>${counteries[i].no}</h1> 
+            <p> ${counteries[i].name}</p> 
+            <p> ${counteries[i].offers}% of</p> 
+            <p>Flight Tickets | Rooms</p>
+            <p>Would You Go</p>
+            <button><a href="Book.html">Booking</a></button>
+
+          </div>
+        </div>
+      </div>`
+    }
+
+    document.querySelector('.kat').innerHTML=output
+    document.querySelector('.kat').style.color='red'
+    
+</script>
+</body>
+</html>
+
+
